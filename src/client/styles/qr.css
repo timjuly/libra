@@ -1,0 +1,38 @@
+.qr-body {
+  text-align: center;
+}
+.qr-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  max-width: 100%;
+  min-height: 280px;
+  margin: 0 auto 14px;
+  border: 1px solid #ece7f3;
+  border-radius: 16px;
+  background: #fff;
+  overflow: hidden;
+}
+.qr-frame img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.qr-caption {
+  font-size: 12px;
+  color: #79718d;
+  margin-bottom: 18px;
+}
+.qr-body .url-preview {
+  text-align: left;
+}
+.qr-body .field-note {
+  margin-bottom: 0;
+}
+.subscription-bottom {
+  flex-wrap: wrap;
+}
+.subscription-bottom > div {
+  flex-wrap: wrap;
+}

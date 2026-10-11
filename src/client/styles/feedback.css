@@ -1,0 +1,44 @@
+.toast {
+  position: fixed;
+  inset: auto;
+  margin: 0;
+  border: 0;
+  pointer-events: none;
+  bottom: 29px;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+  gap: 10px;
+  background: #353246ef;
+  color: #ece4f6;
+  padding: 13px 19px;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px #2e224933;
+  z-index: 100;
+  font-size: 12px;
+  max-width: calc(100vw - 32px);
+  line-height: 1.7;
+}
+.toast:popover-open,
+.toast:not([popover]):not([hidden]) {
+  display: flex;
+}
+.toast[hidden] {
+  display: none;
+}
+.boot-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 35px;
+  padding: 25px;
+  color: #9f88c0;
+}
+.boot-screen .brand {
+  color: #7f678e;
+}
+.boot-screen .message {
+  max-width: 450px;
+}

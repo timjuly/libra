@@ -1,0 +1,270 @@
+:root {
+  color-scheme: light;
+  font-family:
+    Inter,
+    'SF Pro Display',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'PingFang SC',
+    'Microsoft YaHei',
+    sans-serif;
+  color: #252b43;
+  background: #f6f7fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --accent: #7962e8;
+  --accent-dark: #6650d2;
+  --muted: #9296a8;
+  --border: #e9ebf2;
+  --purple-soft: #f0edfe;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+button,
+a,
+input,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+button,
+a {
+  touch-action: manipulation;
+}
+button {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+button {
+  color: inherit;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  border: 0;
+  background: none;
+}
+button,
+button svg,
+a svg {
+  flex-shrink: 0;
+}
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #b8a8f9;
+  outline-offset: 3px;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #9b87f0;
+  box-shadow: 0 0 0 3px #7962e811;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+svg {
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+::selection {
+  background: #ded6ff;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #a9adbc;
+}
+input[type='checkbox'] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent);
+  flex-shrink: 0;
+}
+input,
+textarea {
+  min-width: 0;
+  color: #333a51;
+}
+input:not([type='checkbox']),
+textarea {
+  width: 100%;
+  border: 1px solid #e1e4ed;
+  border-radius: 9px;
+  background: #fff;
+  padding: 11px 13px;
+  transition:
+    border-color 0.15s,
+    box-shadow 0.15s;
+  font-size: 13px;
+  line-height: 1.55;
+}
+textarea {
+  resize: vertical;
+}
+small {
+  font-size: 12px;
+}
+.muted-text {
+  color: var(--muted) !important;
+}
+.spin {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.full {
+  width: 100%;
+}
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  min-height: 41px;
+  padding: 10px 17px;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+  white-space: nowrap;
+  transition:
+    background 0.15s,
+    box-shadow 0.15s,
+    transform 0.15s;
+  border: 1px solid transparent;
+}
+.button.primary {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 3px 9px #7962e820;
+}
+.button.primary:hover:not(:disabled) {
+  background: var(--accent-dark);
+  box-shadow: 0 4px 12px #7962e832;
+}
+.button.secondary {
+  background: white;
+  border-color: #e3e5ee;
+  color: #616779;
+}
+.button.secondary:hover:not(:disabled) {
+  background: #f7f7fb;
+}
+.button.ghost {
+  background: transparent;
+  color: #757b8f;
+}
+.button.danger {
+  background: #df525e;
+  color: white;
+}
+.button.danger:hover {
+  background: #cc4452;
+}
+.button.dashed {
+  border-style: dashed;
+}
+.icon-button {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #9499a9;
+  border-radius: 7px;
+  flex-shrink: 0;
+  padding: 0;
+}
+.icon-button:hover:not(:disabled) {
+  background: #eeeafc;
+  color: var(--accent);
+}
+.text-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #777d92;
+  padding: 3px 0;
+}
+.text-button:hover {
+  color: var(--accent);
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  font-weight: 650;
+  font-size: 27px;
+  letter-spacing: -1px;
+}
+.brand small {
+  display: block;
+  margin-top: 5px;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #939ab6;
+}
+.brand-mark {
+  position: relative;
+  display: inline-block;
+  width: 39px;
+  height: 39px;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #9e89ff, #765cde);
+  box-shadow: 0 5px 13px #0c10272a;
+  flex-shrink: 0;
+}
+.brand-mark:before {
+  content: '';
+  position: absolute;
+  left: 11px;
+  top: 10px;
+  width: 7px;
+  height: 21px;
+  border-radius: 1px;
+  background: #fff;
+}
+.brand-mark:after {
+  content: '';
+  position: absolute;
+  left: 11px;
+  top: 24px;
+  width: 19px;
+  height: 7px;
+  border-radius: 1px;
+  background: #fff;
+}
+.brand-mark > span {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  right: 7px;
+  top: 8px;
+  border-radius: 50%;
+  background: #d4caff;
+}

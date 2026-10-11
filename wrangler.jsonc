@@ -1,0 +1,21 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "libra",
+  "main": "src/worker/index.ts",
+  "compatibility_date": "2026-10-10",
+  "workers_dev": true,
+  "preview_urls": false,
+  "secrets": { "required": ["APP_SECRET"] },
+  "build": { "command": "npm run build" },
+  "kv_namespaces": [{ "binding": "LIBRA_KV","id": "3007d902258740ba8bf948de3e100464" }],
+  "ratelimits": [
+    { "name": "AUTH_LIMITER", "namespace_id": "64181001", "simple": { "limit": 10, "period": 60 } },
+    { "name": "PUBLIC_LIMITER", "namespace_id": "64181002", "simple": { "limit": 120, "period": 60 } },
+  ],
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1,
+    "logs": { "enabled": true, "invocation_logs": false },
+    "traces": { "enabled": false },
+  },
+}

@@ -1,0 +1,58 @@
+.security-layout {
+  display: grid;
+  grid-template-columns: minmax(300px, 560px) minmax(200px, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+.panel {
+  background: white;
+  border: 1px solid #e9e3f0;
+  border-radius: 13px;
+  padding: 26px;
+}
+.panel-heading {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.panel-heading h2 {
+  font-size: 15px;
+  font-weight: 550;
+  color: #8c7e9b;
+}
+.panel-heading p {
+  color: #b4a8c1;
+  font-size: 11px;
+  margin-top: 8px;
+}
+.security-panel .field {
+  margin-bottom: 22px;
+}
+.security-panel .button {
+  margin-top: 9px;
+}
+.security-aside {
+  padding: 28px 20px;
+  color: #baa6ce;
+  max-width: 340px;
+}
+.security-aside h3 {
+  font-size: 17px;
+  font-weight: 500;
+  color: #a28bb7;
+  margin-top: 19px;
+  margin-bottom: 15px;
+}
+.security-aside p {
+  font-size: 11px;
+  line-height: 2;
+  color: #b5a6c4;
+}
+.security-aside strong {
+  font-size: 11px;
+  font-weight: 550;
+  color: #a997bc;
+  display: block;
+  margin: 20px 0 8px;
+}

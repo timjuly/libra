@@ -1,0 +1,724 @@
+@media (min-width: 1450px) {
+  .page-content {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+  .server-card-top {
+    padding: 24px 23px 0;
+  }
+  .server-details {
+    padding: 23px;
+  }
+  .server-card-footer {
+    padding: 13px 22px;
+  }
+  .server-title h3 {
+    font-size: 14px;
+  }
+  .server-title > span {
+    font-size: 11px;
+  }
+  .server-details > div > span:not(.route-count) {
+    font-size: 11px;
+  }
+  .import-button {
+    font-size: 11px;
+  }
+  .stat {
+    padding: 23px;
+  }
+  .page-heading h1 {
+    font-size: 32px;
+  }
+  .page-heading p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1200px) {
+  .sidebar {
+    width: 204px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .workspace {
+    margin-left: 204px;
+  }
+  .page-content {
+    padding: 28px 26px 0;
+  }
+  .topbar {
+    padding: 0 26px;
+  }
+  .server-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .stat {
+    padding: 16px 13px;
+    gap: 10px;
+  }
+  .stat strong small {
+    display: none;
+  }
+  .list-layout {
+    grid-template-columns: 1fr;
+  }
+  .list-layout .server-card {
+    grid-template-columns: minmax(210px, 1fr) minmax(220px, 1fr);
+  }
+  .list-layout .server-card-footer {
+    grid-column: 1/-1;
+    border-left: 0;
+    border-top: 1px solid #f1f2f7;
+    padding: 10px 18px;
+  }
+  .subscriptions-list {
+    grid-template-columns: 1fr;
+  }
+  .auth-story {
+    padding: 35px;
+  }
+  .auth-story h1 {
+    font-size: 38px;
+  }
+  .auth-main {
+    padding: 45px;
+  }
+  .auth-story .brand small {
+    display: none;
+  }
+  .security-layout {
+    grid-template-columns: minmax(300px, 1.5fr) minmax(190px, 1fr);
+    gap: 15px;
+  }
+  .security-aside {
+    padding: 25px 5px;
+  }
+}
+@media (max-width: 950px) {
+  .sidebar {
+    width: 184px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .workspace {
+    margin-left: 184px;
+  }
+  .sidebar .brand {
+    font-size: 24px;
+    gap: 9px;
+  }
+  .brand small {
+    font-size: 8px;
+  }
+  .brand-mark {
+    width: 35px;
+    height: 35px;
+    border-radius: 11px;
+  }
+  .brand-mark:before {
+    left: 10px;
+    top: 9px;
+    height: 19px;
+    width: 6px;
+  }
+  .brand-mark:after {
+    left: 10px;
+    top: 22px;
+    height: 6px;
+    width: 17px;
+  }
+  .brand-mark > span {
+    width: 7px;
+    height: 7px;
+    top: 8px;
+    right: 7px;
+  }
+  .sidebar-tip {
+    padding: 14px 11px;
+  }
+  .topbar {
+    height: 65px;
+  }
+  .page-content {
+    padding: 25px 22px 0;
+  }
+  .toolbar {
+    align-items: flex-start;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .toolbar-tools {
+    flex: 1;
+    justify-content: flex-end;
+  }
+  .search {
+    min-width: 160px;
+  }
+  .view-switch {
+    display: none;
+  }
+  .server-card-top {
+    padding: 17px 14px 0;
+    gap: 9px;
+  }
+  .server-details {
+    padding: 19px 15px;
+  }
+  .server-card-footer {
+    padding: 10px 13px;
+  }
+  .server-card-footer > div {
+    gap: 5px;
+  }
+  .route-count {
+    font-size: 7px;
+    padding: 3px;
+  }
+  .stat {
+    gap: 9px;
+  }
+  .stat-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+  }
+  .stat-icon svg {
+    width: 18px;
+  }
+  .stat > div > span {
+    font-size: 9px;
+  }
+  .stats-grid {
+    gap: 10px;
+  }
+  .stat strong {
+    font-size: 23px;
+  }
+  .subscription-banner {
+    padding: 21px;
+    gap: 13px;
+  }
+  .code-badge {
+    display: none;
+  }
+  .security-layout {
+    grid-template-columns: 1fr;
+  }
+  .security-aside {
+    max-width: none;
+    padding: 20px 10px;
+  }
+  .auth-page {
+    grid-template-columns: 42% 58%;
+  }
+  .auth-story {
+    padding: 32px 25px;
+  }
+  .auth-story h1 {
+    font-size: 33px;
+    letter-spacing: 0;
+  }
+  .auth-story p {
+    font-size: 11px;
+  }
+  .orbit-art {
+    transform: scale(0.8);
+    transform-origin: center;
+    margin-left: -15px;
+    width: 270px;
+  }
+  .auth-players {
+    gap: 10px;
+  }
+  .auth-main {
+    padding: 35px;
+  }
+  .auth-copyright > span {
+    display: none;
+  }
+}
+@media (max-width: 720px) {
+  .sidebar {
+    transform: translateX(-100%);
+    visibility: hidden;
+    transition: transform 0.2s;
+    width: 226px;
+    padding: 30px 20px 0;
+  }
+  .sidebar.is-open {
+    transform: translateX(0);
+    visibility: visible;
+  }
+  .nav-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: #1f243f88;
+    backdrop-filter: blur(3px);
+    z-index: 29;
+  }
+  .workspace {
+    margin-left: 0;
+  }
+  .topbar {
+    height: 62px;
+    padding: 0 18px;
+  }
+  .mobile-menu {
+    display: flex;
+    margin-left: -5px;
+    margin-right: 0;
+  }
+  .breadcrumb {
+    gap: 9px;
+    font-size: 10px;
+  }
+  .topbar-right {
+    gap: 9px;
+  }
+  .private-badge {
+    font-size: 9px;
+  }
+  .topbar-avatar {
+    display: none;
+  }
+  .page-content {
+    padding: 24px 20px 0;
+  }
+  .page-heading {
+    margin-bottom: 23px;
+  }
+  .page-heading h1 {
+    font-size: 28px;
+  }
+  .page-heading .button {
+    font-size: 11px;
+    min-height: 38px;
+    padding: 9px 13px;
+  }
+  .page-heading p {
+    font-size: 10px;
+  }
+  .stats-grid {
+    margin-bottom: 25px;
+    gap: 10px;
+  }
+  .stat {
+    padding: 16px 12px;
+    min-height: 82px;
+  }
+  .stat > div > span {
+    font-size: 9px;
+  }
+  .stat strong {
+    font-size: 22px;
+  }
+  .collection-heading h2 {
+    font-size: 13px;
+  }
+  .server-grid {
+    gap: 13px;
+  }
+  .server-card-top {
+    padding: 17px 15px 0;
+  }
+  .server-card-footer {
+    padding: 10px 15px;
+  }
+  .sidebar-user small {
+    font-size: 9px;
+  }
+  .sidebar .brand small {
+    font-size: 10px;
+  }
+  .sidebar .brand {
+    font-size: 27px;
+  }
+  .workspace-footer {
+    margin-top: 33px;
+  }
+  .toolbar-tools {
+    gap: 7px;
+  }
+  .filter-tabs button {
+    padding: 8px 12px;
+  }
+  .search {
+    height: 32px;
+    min-width: 185px;
+  }
+  .sidebar nav button {
+    font-size: 13px;
+  }
+  .auth-page {
+    display: block;
+  }
+  .auth-story {
+    display: none;
+  }
+  .auth-main {
+    padding: 45px 24px 80px;
+    min-height: 100dvh;
+    justify-content: center;
+  }
+  .auth-mobile-brand {
+    display: block;
+    position: absolute;
+    top: 27px;
+    left: 25px;
+  }
+  .auth-mobile-brand .brand {
+    font-size: 22px;
+    color: #9a82b0;
+  }
+  .auth-mobile-brand .brand small {
+    display: none;
+  }
+  .auth-mobile-brand .brand-mark {
+    width: 32px;
+    height: 32px;
+  }
+  .auth-mobile-brand .brand-mark:before {
+    top: 8px;
+    height: 17px;
+    width: 6px;
+    left: 9px;
+  }
+  .auth-mobile-brand .brand-mark:after {
+    top: 20px;
+    height: 6px;
+    width: 16px;
+    left: 9px;
+  }
+  .auth-mobile-brand .brand-mark > span {
+    height: 6px;
+    width: 6px;
+    right: 6px;
+    top: 7px;
+  }
+  .auth-form {
+    margin-top: 65px;
+    max-width: 390px;
+  }
+  .auth-lock {
+    margin-bottom: 23px;
+  }
+  .auth-form h2 {
+    font-size: 27px;
+  }
+  .auth-copyright > span {
+    display: inline;
+  }
+  .auth-copyright {
+    bottom: 24px;
+    font-size: 7px;
+  }
+  .modal {
+    max-height: calc(100dvh - 24px);
+  }
+  .subscription-banner h2 {
+    font-size: 15px;
+  }
+  .subscription-banner p {
+    font-size: 10px;
+  }
+  .security-panel {
+    padding: 23px;
+  }
+  .collection-footnote {
+    text-align: center;
+    align-items: flex-start;
+    font-size: 8px;
+  }
+  .collection-footnote svg {
+    margin-top: 2px;
+  }
+  .sidebar-bottom {
+    padding-top: 30px;
+  }
+  .modal-header h2 {
+    font-size: 18px;
+  }
+  .modal-header,
+  .modal-body {
+    padding: 20px;
+  }
+  .modal-footer {
+    padding: 15px 20px;
+  }
+  .field-label {
+    font-size: 12px;
+  }
+  .route-fields {
+    grid-template-columns: minmax(0, 1fr) 105px;
+  }
+  .list-layout .server-card {
+    display: block;
+  }
+  .list-layout .server-card-top {
+    padding: 17px;
+  }
+  .list-layout .server-details {
+    padding: 17px;
+  }
+}
+@media (max-width: 460px) {
+  .page-content {
+    padding: 22px 16px 0;
+  }
+  .page-heading p {
+    font-size: 9px;
+  }
+  .page-heading .button {
+    font-size: 10px;
+    gap: 5px;
+    padding: 9px 11px;
+  }
+  .stats-grid {
+    gap: 7px;
+  }
+  .stat {
+    padding: 13px 9px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+    min-height: 102px;
+  }
+  .stat-icon {
+    width: 26px;
+    height: 26px;
+    border-radius: 8px;
+    position: absolute;
+    right: 8px;
+    bottom: 12px;
+  }
+  .stat-icon svg {
+    width: 15px;
+  }
+  .stat > div {
+    width: 100%;
+    position: relative;
+  }
+  .stat > div > span {
+    font-size: 8px;
+    white-space: nowrap;
+    margin-bottom: 16px;
+    margin-top: 4px;
+  }
+  .stat strong {
+    font-size: 25px;
+  }
+  .server-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .server-card-top {
+    padding: 20px 20px 0;
+  }
+  .server-details {
+    padding: 20px;
+  }
+  .server-title h3 {
+    font-size: 14px;
+  }
+  .server-title > span {
+    font-size: 10px;
+  }
+  .server-details > div > span:not(.route-count) {
+    font-size: 11px;
+  }
+  .route-count {
+    font-size: 9px;
+  }
+  .server-card-footer {
+    padding: 11px 19px;
+  }
+  .import-button {
+    font-size: 11px;
+  }
+  .status-button {
+    font-size: 10px;
+  }
+  .toolbar {
+    gap: 12px;
+  }
+  .toolbar-tools {
+    flex-basis: 100%;
+    justify-content: space-between;
+  }
+  .search {
+    flex: 1;
+    min-width: 0;
+    height: 36px;
+  }
+  .search input:not([type='checkbox']) {
+    font-size: 11px;
+  }
+  .view-switch {
+    display: flex;
+  }
+  .filter-tabs button {
+    font-size: 10px;
+    padding: 9px 15px;
+  }
+  .collection-heading .text-button {
+    font-size: 10px;
+  }
+  .collection-heading {
+    margin-bottom: 14px;
+  }
+  .toolbar {
+    margin-bottom: 17px;
+  }
+  .collection-footnote {
+    font-size: 8px;
+  }
+  .subscription-banner {
+    padding: 18px;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .subscription-banner h2 {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 7px;
+  }
+  .subscription-banner .feature-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 11px;
+  }
+  .subscription-card {
+    padding: 17px;
+  }
+  .subscription-top .status-label {
+    display: none;
+  }
+  .subscription-top {
+    gap: 10px;
+  }
+  .subscription-top h3 {
+    font-size: 13px;
+  }
+  .subscription-top p {
+    font-size: 8px;
+  }
+  .subscription-bottom > span {
+    font-size: 7px;
+  }
+  .subscription-bottom > div {
+    gap: 10px;
+  }
+  .subscription-bottom .text-button {
+    font-size: 9px;
+  }
+  .subscription-notice {
+    padding: 16px;
+    gap: 10px;
+  }
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .modal-header p {
+    font-size: 10px;
+    max-width: 265px;
+  }
+  .modal-footer {
+    gap: 8px;
+  }
+  .modal-footer .button {
+    font-size: 11px;
+    padding: 10px 12px;
+  }
+  .route-fields {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .route-fields .field {
+    margin-bottom: 12px;
+  }
+  .route-fields .field-label {
+    font-size: 11px;
+  }
+  .player-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9px;
+  }
+  .player-option {
+    padding: 14px 7px;
+  }
+  .player-option:last-child:nth-child(odd) {
+    grid-column: 1/-1;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding: 11px;
+  }
+  .player-option:last-child:nth-child(odd) .player-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    font-size: 15px;
+  }
+  .import-server {
+    padding: 13px;
+  }
+  .import-server .server-art {
+    width: 37px;
+    height: 37px;
+  }
+  .import-server strong {
+    font-size: 12px;
+  }
+  .import-server p {
+    font-size: 9px;
+  }
+  .import-note {
+    font-size: 9px;
+  }
+  .security-panel {
+    padding: 20px;
+  }
+  .panel-heading {
+    gap: 10px;
+  }
+  .panel-heading h2 {
+    font-size: 14px;
+  }
+  .panel-heading p {
+    font-size: 10px;
+  }
+  .toast {
+    font-size: 11px;
+    bottom: 18px;
+    padding: 11px 15px;
+  }
+  .auth-assurance {
+    font-size: 9px;
+  }
+  .auth-form > p {
+    font-size: 11px;
+  }
+  .auth-form h2 {
+    font-size: 26px;
+  }
+  .auth-copyright {
+    font-size: 7px;
+  }
+  .auth-main {
+    padding-top: 55px;
+  }
+  .auth-form .message {
+    font-size: 10px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+    transition: none !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

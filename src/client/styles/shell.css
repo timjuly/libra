@@ -1,0 +1,230 @@
+.app-shell {
+  min-height: 100vh;
+}
+.sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: 226px;
+  background: #20253d;
+  color: #a2a8bd;
+  padding: 32px 20px 0;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar .brand {
+  padding-left: 9px;
+}
+.nav-label {
+  margin: 53px 0 14px 13px;
+  font-size: 10px;
+  letter-spacing: 1.4px;
+  color: #707994;
+}
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.sidebar nav button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 14px;
+  border-radius: 9px;
+  color: #a8afc6;
+  font-size: 13px;
+  text-align: left;
+  position: relative;
+  transition:
+    background 0.15s,
+    color 0.15s;
+}
+.sidebar nav button.active {
+  background: #7760dc;
+  color: #fff;
+  box-shadow: 0 4px 13px #11162638;
+}
+.sidebar nav button:not(.active):hover {
+  background: #2c324d;
+  color: #eee;
+}
+.sidebar nav button em {
+  font-style: normal;
+  margin-left: auto;
+  font-size: 10px;
+  min-width: 22px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: #ffffff10;
+  color: #aab1c5;
+}
+.sidebar nav button.active em {
+  background: #ffffff25;
+  color: white;
+}
+.sidebar-bottom {
+  margin-top: auto;
+  padding-top: 50px;
+}
+.sidebar-tip {
+  background: linear-gradient(130deg, #2c304c, #292e47);
+  border: 1px solid #353a55;
+  border-radius: 12px;
+  padding: 17px 15px;
+  margin-bottom: 25px;
+}
+.tip-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #7962e829;
+  color: #b5a7ff;
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
+  margin-bottom: 11px;
+}
+.sidebar-tip h3 {
+  font-size: 12px;
+  font-weight: 550;
+  color: #dddff0;
+  margin-bottom: 9px;
+}
+.sidebar-tip p {
+  font-size: 10px;
+  color: #929ab3;
+  line-height: 1.9;
+}
+.sidebar-tip button {
+  color: #b8a9ff;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+  padding: 0;
+  width: 100%;
+}
+.sidebar-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid #34394f;
+  margin: 0 -4px;
+  padding: 19px 2px 23px;
+}
+.avatar {
+  background: #393b59;
+  border: 1px solid #494b6c;
+  color: #b7afdc;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar-user strong {
+  font-size: 11px;
+  font-weight: 500;
+  color: #e1e4f0;
+  display: block;
+}
+.sidebar-user small {
+  font-size: 9px;
+  display: block;
+  margin-top: 5px;
+  color: #7f88a1;
+}
+.sidebar-user .icon-button {
+  margin-left: auto;
+  color: #7a839e;
+}
+.workspace {
+  margin-left: 226px;
+  min-height: 100vh;
+}
+.topbar {
+  height: 72px;
+  border-bottom: 1px solid #e9ebf2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 38px;
+  background: #ffffffc7;
+}
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 11px;
+  color: #9ba0b3;
+}
+.breadcrumb strong {
+  font-weight: 500;
+  color: #586178;
+}
+.breadcrumb-arrow {
+  transform: rotate(-90deg);
+  color: #b8bdcb;
+}
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.private-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  color: #9197a9;
+}
+.topbar-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 1px #edeaf8;
+  background: #e8e3fb;
+  color: #8f7cd3;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 50%;
+}
+.page-content {
+  padding: 33px 38px 0;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.page-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 27px;
+}
+.page-heading h1 {
+  font-size: 29px;
+  letter-spacing: -0.8px;
+  font-weight: 650;
+  line-height: 1.25;
+}
+.heading-dot {
+  color: var(--accent);
+  margin-left: 3px;
+}
+.page-heading p {
+  font-size: 11px;
+  color: #9a9fb2;
+  margin-top: 10px;
+  letter-spacing: 0.1px;
+}
+.page-heading > .button {
+  margin-top: 5px;
+}

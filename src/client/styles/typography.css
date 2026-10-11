@@ -1,0 +1,255 @@
+/* Keep the quiet palette readable, especially for actual connection details. */
+.page-heading p,
+.stat > div > span,
+.server-title > span,
+.server-details > div > span:not(.route-count),
+.field > small,
+.field-note,
+.modal-header p,
+.setting-row p,
+.import-note,
+.help-step p,
+.subscription-banner p,
+.subscription-top p,
+.subscription-notice p,
+.security-aside p,
+.panel-heading p,
+.auth-form > p,
+.auth-assurance {
+  color: #777c93;
+}
+.server-title h3,
+.auth-form h2,
+.subscription-top h3,
+.subscription-banner h2,
+.panel-heading h2,
+.security-aside h3,
+.help-step h3,
+.import-server strong,
+.player-option strong {
+  color: #424861;
+}
+.auth-form .field-label,
+.field-label,
+.setting-row strong,
+.security-aside strong,
+.subscription-notice strong {
+  color: #626980;
+}
+.auth-form .button.full {
+  background: var(--accent);
+}
+.auth-form .button.full:hover {
+  background: var(--accent-dark);
+}
+.auth-story p {
+  color: #b0abc4;
+}
+.auth-players {
+  color: #aaa0bc;
+  font-size: 10px;
+}
+.server-title h3 {
+  font-size: 14px;
+}
+.server-title > span,
+.server-details > div > span:not(.route-count) {
+  font-size: 12px;
+}
+.server-details {
+  gap: 14px;
+}
+.route-count {
+  font-size: 10px;
+  color: #7b8298;
+}
+.import-button {
+  font-size: 12px;
+  color: #8061bb;
+}
+.status-button {
+  font-size: 11px;
+}
+.status-button.enabled,
+.status-label.enabled {
+  color: #4d8b74;
+}
+.stat > div > span {
+  font-size: 11px;
+}
+.stat strong small {
+  font-size: 10px;
+  color: #858a9e;
+}
+.collection-heading h2 {
+  font-size: 15px;
+}
+.collection-heading .text-button {
+  font-size: 12px;
+}
+.filter-tabs button,
+.search input:not([type='checkbox']) {
+  font-size: 12px;
+}
+.filter-tabs button {
+  color: #777d92;
+}
+.search {
+  min-width: 245px;
+  height: 36px;
+}
+.collection-footnote {
+  font-size: 10px;
+  color: #858a9e;
+}
+.field-label {
+  font-size: 13px;
+}
+.field > small,
+.field-note,
+.setting-row p,
+.import-note,
+.modal-header p {
+  font-size: 12px;
+}
+.route-fields .field-label {
+  font-size: 12px;
+  color: #7b7689;
+}
+.route-fields input {
+  font-size: 12px !important;
+}
+.message {
+  font-size: 12px;
+  color: #7d6998;
+}
+.message.error {
+  color: #a44856;
+}
+.message.success {
+  color: #487c66;
+}
+.auth-form .field-label {
+  font-size: 12px;
+}
+.auth-form input:not([type='checkbox']) {
+  font-size: 13px;
+}
+.auth-form > p {
+  font-size: 13px;
+}
+.strength p {
+  color: #8a8398;
+  font-size: 10px;
+}
+.strength p > span.valid {
+  color: #8364a8;
+}
+.player-option strong {
+  font-size: 12px;
+}
+.import-server p,
+.subscription-url code,
+.url-preview {
+  color: #79738b;
+  font-size: 12px;
+}
+.subscription-top h3 {
+  font-size: 14px;
+}
+.subscription-top p,
+.subscription-notice p,
+.subscription-banner p {
+  font-size: 12px;
+}
+.subscription-bottom .text-button {
+  font-size: 11px;
+  color: #826798;
+}
+.subscription-bottom > span {
+  font-size: 10px;
+  color: #8f839d;
+}
+.security-aside p,
+.help-step p,
+.help-step h3 {
+  font-size: 12px;
+}
+.help-step h3 {
+  font-size: 14px;
+}
+@media (max-width: 950px) {
+  .search {
+    min-width: 190px;
+  }
+  .server-details > div > span:not(.route-count) {
+    font-size: 11px;
+  }
+  .route-count {
+    font-size: 9px;
+  }
+  .stat > div > span {
+    font-size: 10px;
+  }
+}
+@media (max-width: 720px) {
+  input:not([type='checkbox']),
+  .auth-form input:not([type='checkbox']),
+  .route-fields input,
+  .search input:not([type='checkbox']),
+  textarea {
+    font-size: 16px !important;
+  }
+  .icon-button {
+    width: 36px;
+    height: 36px;
+  }
+  .search {
+    height: 40px;
+    min-width: 160px;
+  }
+  .server-card-top > .icon-button {
+    width: 32px;
+    height: 32px;
+  }
+  .server-card-footer .icon-button {
+    width: 32px;
+    height: 32px;
+  }
+  .modal-footer .button {
+    min-height: 44px;
+  }
+}
+@media (max-width: 460px) {
+  .page-heading p {
+    font-size: 11px;
+  }
+  .stat > div > span {
+    font-size: 9px;
+  }
+  .search {
+    min-width: 0;
+  }
+  .server-details > div > span:not(.route-count) {
+    font-size: 12px;
+  }
+  .route-count {
+    font-size: 10px;
+  }
+  .modal-footer .button {
+    font-size: 12px;
+  }
+  .subscription-bottom > div {
+    gap: 14px;
+  }
+  .subscription-bottom > span {
+    flex-basis: 100%;
+    margin-bottom: 5px;
+  }
+  .subscription-bottom .text-button {
+    font-size: 12px;
+  }
+  .collection-footnote {
+    font-size: 10px;
+  }
+}

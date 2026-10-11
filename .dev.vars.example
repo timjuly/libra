@@ -1,0 +1,3 @@
+# Generate with: openssl rand -hex 32
+# This is the encryption key AND the one-time setup key. Keep it across deployments.
+APP_SECRET=
